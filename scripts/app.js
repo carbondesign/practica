@@ -831,70 +831,95 @@
         angular.module("app.tables", []).controller("tableCtrl", ["$scope", "$filter", function($scope, $filter) {
             var init;
             return $scope.stores = [{
-            
+                logo: booze.png
                 name: "Booze Allen",
-                price: "$$",
-                sales: 292,
+                task: "create a database for online learning",
+                num_part: 2,
+                due: "12/13/2014"
                 rating: 4
             }, {
-                name: "Eat On Monday Truck",
-                price: "$",
-                sales: 119,
+                logo:angielist
+                name: "angielist",
+                task: "create a website for non profit org",
+                num_part: 3,
+                due:"11/11/2014"
                 rating: 4.3
             }, {
-                name: "Tea Era",
-                price: "$",
-                sales: 874,
+                logo:deloitte.png
+                name: "Deloitte",
+                task: "help with a network infrastructure"
+                Num_part:1
+                due: "10/09/2014",
                 rating: 4
             }, {
-                name: "Rogers Deli",
-                price: "$",
-                sales: 347,
+                Logo:freelancer.jpg
+                name: "Free Lancer",
+                task: "help with financial analysis",
+                Num_part 3,
+                due:"10/09/2014"
                 rating: 4.2
             }, {
-                name: "MoBowl",
-                price: "$$$",
-                sales: 24,
+                logo:1776.jpg
+                name: "1776",
+                task: "create a marketing plan for marketing internship",
+                Num_part: 4,
+                due:"02/03/2015"
                 rating: 4.6
             }, {
-                name: "The Milk Pail Market",
-                price: "$",
-                sales: 543,
+                logo:odek.jpg
+                name: "Odesk",
+                task: "need help with logo design",
+                Num_part: 3,
+                due:"03/03/2015"
                 rating: 4.5
             }, {
-                name: "Nob Hill Foods",
-                price: "$$",
-                sales: 874,
+                logo:GA.jpg
+                name: "General Assembly",
+                task: "$need help with organizing the project plan",
+                Num_part: 1,
+                due:"05/03/2014"
                 rating: 4
             }, {
-                name: "Scratch",
-                price: "$$$",
-                sales: 643,
+                logo:kpmg.jpg
+                name: "KPMG",
+                task: "need help with tax documentation",
+                Num_part: 2,
+                due:"11/08/2014"
                 rating: 3.6
             }, {
-                name: "Gochi Japanese Fusion Tapas",
-                price: "$$$",
-                sales: 56,
+                logo:"Ernest.png"
+                name: "Ernest",
+                task: "dashboard design",
+                Num_part:2,
+                due:"01/01/2015"
                 rating: 4.1
             }, {
-                name: "Cost Plus World Market",
-                price: "$$",
-                sales: 79,
+                logo:"ford.png"
+                name: "Ford Motor Company",
+                task: "Engineering design internship",
+                Num_part: 4,
+                due:"06/02/2015"
                 rating: 4
             }, {
+                logo:"bumble.jpg"
                 name: "Bumble Bee Health Foods",
-                price: "$$",
-                sales: 43,
+                task: "Creating a lables for our product",
+                Num_part: 3,
+                due:"02/03/2015"
                 rating: 4.3
             }, {
+                logo:"costco.jpg"
                 name: "Costco",
-                price: "$$",
-                sales: 219,
+                task: "internship in call center",
+                Num_part: 2,
+                due:"04/04/2015"
                 rating: 3.6
             }, {
-                name: "Red Rock Coffee Co",
-                price: "$",
-                sales: 765,
+                logo:"GW-hospital.png"
+                name: "George Washington Hospital",
+                task: "Nursing internship",
+                Num_part: 6,
+                due:"08/09/2015"
                 rating: 4.1
             }, {
                 name: "99 Ranch Market",
@@ -917,7 +942,6 @@
                 sales: 113,
                 rating: 3.3
             }, {
-                name: "Dana Street Roasting",
                 price: "$",
                 sales: 316,
                 rating: 4.1
