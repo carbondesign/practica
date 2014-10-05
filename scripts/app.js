@@ -831,7 +831,8 @@
         angular.module("app.tables", []).controller("tableCtrl", ["$scope", "$filter", function($scope, $filter) {
             var init;
             return $scope.stores = [{
-                name: "Nijiya Market",
+            
+                name: "Booze Allen",
                 price: "$$",
                 sales: 292,
                 rating: 4
