@@ -831,155 +831,75 @@
         angular.module("app.tables", []).controller("tableCtrl", ["$scope", "$filter", function($scope, $filter) {
             var init;
             return $scope.stores = [{
-                logo: booze.png
-                name: "Booze Allen",
-                task: "create a database for online learning",
-                num_part: 2,
-                due: "12/13/2014"
-                rating: 4
+                "logo": "booz.png",
+                "name": "Booze Allen",
+                "task": "create a database for online learning",
+                "num_part": 2,
+                "due": "12/13/2014",
+                "rating": 4
             }, {
-                logo:angielist
-                name: "angielist",
-                task: "create a website for non profit org",
-                num_part: 3,
-                due:"11/11/2014"
-                rating: 4.3
+                "logo": "angielist.jpg",
+                "name": "angielist",
+                "task": "create a website for non profit org",
+                "num_part": 3,
+                "due": "11/11/2014",
+                "rating": 4.3
             }, {
-                logo:deloitte.png
-                name: "Deloitte",
-                task: "help with a network infrastructure"
-                Num_part:1
-                due: "10/09/2014",
-                rating: 4
+                "logo":"freelancer.png",
+                "name": "Free Lancer",
+                "task": "help with financial analysis",
+                "num_part": 3,
+                "due":"10/09/2014",
+                "rating": 4.2
             }, {
-                Logo:freelancer.jpg
-                name: "Free Lancer",
-                task: "help with financial analysis",
-                Num_part 3,
-                due:"10/09/2014"
-                rating: 4.2
+                "logo":"1776.jpg",
+                "name": "1776",
+                "task": "create a marketing plan for marketing internship",
+                "num_part": 4,
+                "due":"02/03/2015",
+                "rating": 4.6
             }, {
-                logo:1776.jpg
-                name: "1776",
-                task: "create a marketing plan for marketing internship",
-                Num_part: 4,
-                due:"02/03/2015"
-                rating: 4.6
+                "logo":"odesk.jpeg",
+                "name": "Odesk",
+                "task": "need help with logo design",
+                "num_part": 3,
+                "due":"03/03/2015",
+                "rating": 4.5
             }, {
-                logo:odek.jpg
-                name: "Odesk",
-                task: "need help with logo design",
-                Num_part: 3,
-                due:"03/03/2015"
-                rating: 4.5
+                "logo":"GA.jpg",
+                "name": "General Assembly",
+                "task": "need help with organizing the project plan",
+                "num_part": 1,
+                "due":"05/03/2014",
+                "rating": 4
+            },{
+                "logo":"ford.jpeg",
+                "name": "Ford Motor Company",
+                "task": "Engineering design internship",
+                "num_part": 4,
+                "due":"06/02/2015",
+                "rating": 4
             }, {
-                logo:GA.jpg
-                name: "General Assembly",
-                task: "$need help with organizing the project plan",
-                Num_part: 1,
-                due:"05/03/2014"
-                rating: 4
+                "logo":"bumble.jpg",
+                "name": "Bumble Bee Health Foods",
+                "task": "Creating a lables for our product",
+                "num_part": 3,
+                "due":"02/03/2015",
+                "rating": 4.3
             }, {
-                logo:kpmg.jpg
-                name: "KPMG",
-                task: "need help with tax documentation",
-                Num_part: 2,
-                due:"11/08/2014"
-                rating: 3.6
+                "logo":"costco.jpg",
+                "name": "Costco",
+                "task": "internship in call center",
+                "num_part": 2,
+                "due": "04/04/2015",
+                "rating": 3.6
             }, {
-                logo:"Ernest.png"
-                name: "Ernest",
-                task: "dashboard design",
-                Num_part:2,
-                due:"01/01/2015"
-                rating: 4.1
-            }, {
-                logo:"ford.png"
-                name: "Ford Motor Company",
-                task: "Engineering design internship",
-                Num_part: 4,
-                due:"06/02/2015"
-                rating: 4
-            }, {
-                logo:"bumble.jpg"
-                name: "Bumble Bee Health Foods",
-                task: "Creating a lables for our product",
-                Num_part: 3,
-                due:"02/03/2015"
-                rating: 4.3
-            }, {
-                logo:"costco.jpg"
-                name: "Costco",
-                task: "internship in call center",
-                Num_part: 2,
-                due:"04/04/2015"
-                rating: 3.6
-            }, {
-                logo:"GW-hospital.png"
-                name: "George Washington Hospital",
-                task: "Nursing internship",
-                Num_part: 6,
-                due:"08/09/2015"
-                rating: 4.1
-            }, {
-                name: "99 Ranch Market",
-                price: "$",
-                sales: 181,
-                rating: 3.4
-            }, {
-                name: "Mi Pueblo Food Center",
-                price: "$",
-                sales: 78,
-                rating: 4
-            }, {
-                name: "Cucina Venti",
-                price: "$$",
-                sales: 163,
-                rating: 3.3
-            }, {
-                name: "Sufi Coffee Shop",
-                price: "$",
-                sales: 113,
-                rating: 3.3
-            }, {
-                price: "$",
-                sales: 316,
-                rating: 4.1
-            }, {
-                name: "Pearl Cafe",
-                price: "$",
-                sales: 173,
-                rating: 3.4
-            }, {
-                name: "Posh Bagel",
-                price: "$",
-                sales: 140,
-                rating: 4
-            }, {
-                name: "Artisan Wine Depot",
-                price: "$$",
-                sales: 26,
-                rating: 4.1
-            }, {
-                name: "Hong Kong Chinese Bakery",
-                price: "$",
-                sales: 182,
-                rating: 3.4
-            }, {
-                name: "Starbucks",
-                price: "$$",
-                sales: 97,
-                rating: 3.7
-            }, {
-                name: "Tapioca Express",
-                price: "$",
-                sales: 301,
-                rating: 3
-            }, {
-                name: "House of Bagels",
-                price: "$",
-                sales: 82,
-                rating: 4.4
+                "logo":"GW-hospital.png",
+                "name": "George Washington Hospital",
+                "task": "Nursing internship",
+                "num_part": 6,
+                "due":"08/09/2015",
+                "rating": 4.1
             }], $scope.searchKeywords = "", $scope.filteredStores = [], $scope.row = "", $scope.select = function(page) {
                 var end, start;
                 return start = (page - 1) * $scope.numPerPage, end = start + $scope.numPerPage, $scope.currentPageStores = $scope.filteredStores.slice(start, end)
@@ -1002,7 +922,7 @@
         "use strict";
         angular.module("app.task", []).factory("taskStorage", function() {
             var DEMO_TASKS, STORAGE_ID;
-            return STORAGE_ID = "tasks", DEMO_TASKS = '[ {"title": "Finish Report", "completed": true}, {"title": "Call client", "completed": true}, {"title": "Create Site Map", "completed": false}, {"title": "Review first draft of designs", "completed": false} ]', {
+            return STORAGE_ID = "tasks", DEMO_TASKS = '[ {"title": "Finish homework", "completed": true}, {"title": "Make a call", "completed": true}, {"title": "Play games with friends", "completed": false}, {"title": "Shopping", "completed": false} ]', {
                 get: function() {
                     return JSON.parse(localStorage.getItem(STORAGE_ID) || DEMO_TASKS)
                 },
@@ -1537,7 +1457,7 @@
                 return path = $location.path(), _.contains(["/404", "/pages/500", "/pages/login", "/pages/signin", "/pages/signin1", "/pages/signin2", "/pages/signup", "/pages/signup1", "/pages/signup2", "/pages/lock-screen"], path)
             }, $scope.main = {
                 brand: "Pratica",
-                name: "Kalina"
+                name: "Lisa Doe"
             }
         }]).controller("NavCtrl", ["$scope", "taskStorage", "filterFilter", function($scope, taskStorage, filterFilter) {
             var tasks;

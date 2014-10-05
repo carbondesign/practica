@@ -27,7 +27,7 @@
             <thead>
                 <tr>
                     <th><div class="th">
-                        Store Name
+                        Company Name
                         <span class="glyphicon glyphicon-chevron-up"
                               data-ng-click=" order('name') "
                               data-ng-class="{active: row == 'name'}"></span>
@@ -36,22 +36,22 @@
                               data-ng-class="{active: row == '-name'}"></span>
                     </div></th>
                     <th><div class="th">
-                        Price
+                        Task
                         <span class="glyphicon glyphicon-chevron-up"
-                              data-ng-click=" order('price') "
-                              data-ng-class="{active: row == 'price'}"></span>
+                              data-ng-click=" order('task') "
+                              data-ng-class="{active: row == 'task'}"></span>
                         <span class="glyphicon glyphicon-chevron-down"
-                              data-ng-click=" order('-price') "
-                              data-ng-class="{active: row == '-price'}"></span>
+                              data-ng-click=" order('-task') "
+                              data-ng-class="{active: row == '-task'}"></span>
                     </div></th>
                     <th><div class="th">
-                        Sales (in 30 days)
+                        Number of Participants
                         <span class="glyphicon glyphicon-chevron-up"
-                              data-ng-click=" order('sales') "
-                              data-ng-class="{active: row == 'sales'}"></span>
+                              data-ng-click=" order('num_part') "
+                              data-ng-class="{active: row == 'num_part'}"></span>
                         <span class="glyphicon glyphicon-chevron-down"
-                              data-ng-click=" order('-sales') "
-                              data-ng-class="{active: row == '-sales'}"></span>
+                              data-ng-click=" order('-num_part') "
+                              data-ng-class="{active: row == '-num_part'}"></span>
                     </div></th>
                     <th><div class="th">
                         Rating
@@ -66,9 +66,9 @@
             </thead>
             <tbody>
                 <tr data-ng-repeat="store in currentPageStores">
-                    <td>{{store.name}}</td>
-                    <td>{{store.price}}</td>
-                    <td>{{store.sales}}</td>
+                    <td><img style="max-width:100px; max-height:50px; margin-right:20px" src="images/{{store.logo}}">{{store.name}}</td>
+                    <td><a href="">{{store.task}}</a></td>
+                    <td>{{store.num_part}}</td>
                     <td>{{store.rating}}</td>
                 </tr>
             </tbody>
