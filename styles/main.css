@@ -133,7 +133,7 @@ textarea {
   font: inherit;
   margin: 0;
 }
-
+.page-dashboard h1{font-weight: bold; font-size: 72px; margin-top: 60px; text-transform: uppercase;}
 button {
   overflow: visible;
 }
