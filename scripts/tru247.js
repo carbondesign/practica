@@ -256,9 +256,13 @@ d3.json('scripts/tru247.json', function(json) {
 	/* ************************** */
 	
 	// tiles mouseover events
-	$('#tiles td').hover(function() {
 	
+	$('#tiles td').hover(function() {
+		if(this.id== 'd0h0'){
+			$('#skill_box').css('display','block');
+		}
 		$(this).addClass('sel');
+		
 		
 		var tmp = $(this).attr('id').split('d').join('').split('h'),
 			day = parseInt(tmp[0]),
@@ -285,7 +289,7 @@ d3.json('scripts/tru247.json', function(json) {
 	}, function() {
 		
 		$(this).removeClass('sel');
-		
+		// $('#skill_box').css('display','none');
 		var $sel = d3.select('#map path.state.sel');
 		
 		if ($sel.empty()) {

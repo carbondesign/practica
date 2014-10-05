@@ -70,8 +70,7 @@ fieldset#type {
 #vis {
 	clear: all;
 	margin-bottom: 20px;
-	height: 370px;
-	height: 285px;
+
 }
 
 #tiles {
@@ -79,6 +78,14 @@ fieldset#type {
 	clear: both;
 }
 
+span#skill_box{
+	z-index: 2000000;
+	left:40px;
+	top:20px;
+	background-color: white;
+	padding: 10px;
+	border:thin solid #ccc;
+}
 #tiles th {
 	vertical-align: top;
 	padding: 3px;
@@ -175,7 +182,6 @@ th.h7, th.h8, th.h9, th.h10, th.h11, th.h12, th.h13, th.h14, th.h15, th.h16, th.
 #legend {
 	clear: left;
 	margin-left: 24px;
-	width: 165px;
 	color: #777;
 	margin-top: 10px;
 	background: #f3f3f3;
