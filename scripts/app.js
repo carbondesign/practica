@@ -978,7 +978,7 @@
         "use strict";
         angular.module("app.task", []).factory("taskStorage", function() {
             var DEMO_TASKS, STORAGE_ID;
-            return STORAGE_ID = "tasks", DEMO_TASKS = '[ {"title": "Finish homework", "completed": true}, {"title": "Make a call", "completed": true}, {"title": "Play games with friends", "completed": false}, {"title": "Shopping", "completed": false} ]', {
+            return STORAGE_ID = "tasks", DEMO_TASKS = '[ {"title": "Finish Report", "completed": true}, {"title": "Call client", "completed": true}, {"title": "Create Site Map", "completed": false}, {"title": "Review first draft of designs", "completed": false} ]', {
                 get: function() {
                     return JSON.parse(localStorage.getItem(STORAGE_ID) || DEMO_TASKS)
                 },
@@ -1513,7 +1513,7 @@
                 return path = $location.path(), _.contains(["/404", "/pages/500", "/pages/login", "/pages/signin", "/pages/signin1", "/pages/signin2", "/pages/signup", "/pages/signup1", "/pages/signup2", "/pages/lock-screen"], path)
             }, $scope.main = {
                 brand: "Pratica",
-                name: "Lisa Doe"
+                name: "Kalina"
             }
         }]).controller("NavCtrl", ["$scope", "taskStorage", "filterFilter", function($scope, taskStorage, filterFilter) {
             var tasks;
